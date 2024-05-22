@@ -1,0 +1,821 @@
+
+/* src/Loading.css */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black; /* or any color that fits your design */
+}
+
+.loading-video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.form-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styling for form wrapper */
+.form-2 {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for form elements */
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+}
+
+/* Styling for submit button */
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+  align-items: center;
+  text-align: center;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: rgb(80, 206, 80);
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@keyframes bounce {
+  from{transform:translateY(0px);}
+  to{transform:translateY(-20px);}}
+  .circle{animation: bounce 400ms
+  alternate infinite
+cubic-bezier(.2, .65, .6, 1)}
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  padding: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d5e409; /* Change the color as desired */
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Change the color as desired */
+  }
+
+  .navbar-nav .nav-link {
+    color: #fff;
+  }
+}
+.clearfix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+  background-image: linear-gradient(to left, green, white, skyblue);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  margin: 40px;
+  padding: 20px;
+}
+.container-3{  animation: rotating 2s linear;
+  animation-iteration-count: infinite;}
+.clearfix img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.clearfix:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.clearfix h1,
+.clearfix p {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .clearfix {
+      margin: 20px;
+  }
+}
+/* Navbr.css */
+
+/* Example animation for the brand */
+.navbar-brand {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Example animation for the navigation links */
+.navbar-nav .nav-link {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media(min-width: 1330px){
+  .nav-item{
+    font-size: x-small;
+}
+}
+@media(min-width: 1000px){
+  .nav-item{
+    font-size: x-small;
+}
+}
+
+.navbar-brand{color: rgb(87, 238, 87);font-size: 20px;}
+
+.nav-item{margin-left: 20px;font-size: large;}
+h3{ color: rgb(216, 30, 30);position:relative;}
+#container{margin: 10%;}
+p2{font-size: 25px; font-weight: bold;;}
+@media (max-width: 576px) {
+  p2{
+    font-size: 15px; font-weight: bold;
+  }
+} 
+.card,img{height: 70px;}
+
+.col-md-3{border: 3px solid black;}
+
+ /* Container to position text over image */
+ .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Style for the image */
+  .image-container,img {
+    display: block;
+    width: 100%;
+    height: 570px;
+  }
+
+  /* Style for the text */
+  .overlay-text {
+    position: absolute;
+    top: 12%; /* Adjust as needed */
+    left: 10%; /* Adjust as needed */
+    color: rgb(212, 212, 179);
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+    @media (max-width: 576px) {
+        .overlay-text{
+          font-size: 30px;
+        }
+      } 
+
+    
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#scoller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#scoller::-webkit-scrollbar {
+    display: none;
+}
+
+#scoller h4 {
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 10px;
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
+  color: rgb(142, 213, 231);
+}
+
+#scoller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scoller h4:hover {
+    color: rgb(67, 228, 3);
+}
+@media only screen and (max-width: 768px) {
+  #scoller h4 {
+   font-size: 70px;
+    }}
+@keyframes scroll {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translatex(-100%);
+    }
+}
+/* about paragragh=========================== */
+.centered-paragraphs {
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.centered-paragraphs p {
+  margin: 10px 0; /* Adjust the margin as needed */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .centered-paragraphs {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+}
+/* home-========================================= */
+.clearfix{
+  
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+  background-image:linear-gradient(to left,green,white,skyblue);
+ 
+}
+.clearfix,h1,p{
+  
+margin-top: 40px;
+}
+/* home images reflect-------------================ */
+.card45 {
+  /* ... Your existing styles ... */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card45:hover {
+  transform: scale(1.1);
+}
+
+/* You can also add an animation to the overlay */
+.overlay {
+  /* ... Your existing styles ... */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.card45:hover .overlay {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#cards-container {
+  /* background-color: red; */
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  transition: all ease 0.9s;
+  z-index: 10;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+.card45 {
+  height: 80%;
+  width: 28%;
+  /* background-color: blue; */
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+}
+@media (max-width: 768px) {
+  .card45 {
+      width: 100%;
+      margin: 10px 0;
+  }
+}
+
+
+#card1 {
+  background-image: url(https://lp-cms-production.imgix.net/2021-01/GettyRF_450207051.jpg);
+}
+
+#card2 {
+  background-image: url(https://www.peakadventuretour.com/blog/wp-content/uploads/2014/07/snow-leopard.jpg);
+}
+
+#card3 {
+  background-image: url(https://www.india-tours.com/images/festivals/kailash-fair/kailash-fair.jpg);
+}
+#card4 {
+  background-image: url(https://dc1fpv8kkq7dm.cloudfront.net/images/blogs/master_images/64996a158d268-Master-Image.jpg);
+}
+
+#card5 {
+  background-image: url(https://hindi.holidayrider.com/wp-content/uploads/2019/07/mount-mckinley-898378_1920-min.jpg);
+}
+
+#card6 {
+  background-image: url(https://dissectit.com/wp-content/uploads/2020/09/kullu-dussehra-2018_1540192005.jpeg);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(14, 15, 14);
+  padding: 20px;
+  padding-top: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+
+.overlay h3 {
+  color: rgb(221, 201, 201);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  align-items: center;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  color: rgb(202, 202, 33);
+  font-size: 16px;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay:hover {
+  transform: rotate3d(1, 1, 0);
+}
+/* circle picture------------------ */
+
+/* other pictuerrre circle=-===-============== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.top-circles {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.bottom-circles {
+  display: flex;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 70px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-column {
+  flex-grow: 1;
+  max-width: 400px;
+}
+
+.paragraph-box {
+  max-width: 600px;
+  margin-bottom: 60px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .top-circles,
+  .bottom-circles {
+    flex-direction:row;
+    margin-left: 60px;
+  }
+  .paragraph-box{text-align: center;}
+}
+@media only screen and (max-width: 999px) {
+  .circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .top-circles,
+  .bottom-circles {
+    flex-direction:row;
+    margin-left: 80px;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .top-circles,
+  .bottom-circles {
+    flex-direction:row;
+    margin-left: 140px;
+  }
+  .paragraph-box{
+  margin-left: 40px;align-items: center;text-align:center;}
+}
+
+@media only screen and (max-width: 768px) {
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .top-circles,
+  .bottom-circles {
+    flex-direction:row;
+    margin-left: 80px;
+  }
+  .paragraph-box{
+    margin-left: 40px;align-items: center;text-align:center;}
+}
+
+/* ---====================================video */
+/* .full-screen-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+} */
+
+.full-screen-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+#main {
+  position: relative;
+  background-color: rgba(63, 57, 57, 0.178);
+
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#page1 h1 {
+  font-size: 80px;
+  font-weight: 900;
+  color: rgb(236, 151, 22);
+}
+#page1 h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+#page1 p {
+  font-size:25px;
+  font-weight: 600;
+  color: rgb(21, 206, 46);
+}
+
+
+/* #page h1::after {
+  content: "EAT. DRINK. PLAY.";
+  position: absolute;
+  color: rgb(219, 198, 198);
+} */
+/* ------------------------footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+.footer {
+  animation: pulse 10s infinite;
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #001F3F;
+  }
+  50% {
+    background-color: rgb(3, 2, 2);
+  }
+}
+.footer {
+  animation: 
+    pulse 2s ease infinite alternate, 
+    nudge 4s linear infinite alternate;
+}
+/* how to rech=================== */
+/* YourComponent.css */
+
+/* Existing styles for larger screens */
+
+/* Animation for the "holo" div */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(13470px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100);
+  }
+}
+
+.holo {
+  /* Apply animation to "holo" div */
+  animation: fadeIn 1s ease-out;
+}
+
+/* Styles for mobile view */
+@media only screen and (max-width: 768px) {
+  .holo {
+    text-align: center; /* Adjust as needed for mobile layout */
+  }
+}
+
+.holo{flex-direction:column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;}
+
+
+
+
+  /* YourComponent.css */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to image-container and featurette */
+.image-container,
+.featurette {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to image-container and featurette */
+Carousel{
+  animation: fadeIn 1s ease-out;
+}
